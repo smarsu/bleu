@@ -18,8 +18,8 @@ def unitest():
     vocab_size = 15
     max_len = 20
 
-    reference_len = int(np.random.randint(1, max_len, 1))
-    candidate_len = int(np.random.randint(1, max_len, 1))
+    reference_len = int(np.random.randint(0, max_len, 1))
+    candidate_len = int(np.random.randint(0, max_len, 1))
 
     reference = np.random.randint(0, vocab_size, reference_len).astype(np.int16)
     candidate = np.random.randint(0, vocab_size, candidate_len).astype(np.int16)
